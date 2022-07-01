@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create Event
+{% endblock %}
+
+{% block main %}
+    <form class="background3" action="/createEvent" method="post">
+        <div class ="container-fluid py-5 text-center">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="eventName" name="eventName" placeHolder="Event Name" type="text" value='{{event}}'>
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="eventDescription" name="eventDescription" placeHolder="Description" type="text" value='{{description}}'>
+            </div>
+            <div>
+                <label for="appt" style ="font-weight:bold;color: white;background-color:#137CFF;">Start Time:</label>
+                <input type="datetime-local" id="startDate"
+                    name="startDate"
+                    min={{today}} max="2025-12-31T00:00">
+            </div>
+            <div>
+                    <label for="appt" style ="font-weight:bold;color: white;background-color:#137CFF;">End Time:</label>
+                    <input type="datetime-local" id="endDate"
+                        name="endDate"
+                        min={{today}} max="2025-12-31T00:00">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="location" name="location" placeHolder="Location" type="text" value='{{location}}'>
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="participants" name="participants" placeHolder="Number of Participants" type="number" min="1">
+            </div>
+        div></div>
+            <button class="btn btn-primary" id="information" type="submit">Create</button>
+        </div>
+    </form>
+
+{% endblock %}

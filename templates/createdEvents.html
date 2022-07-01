@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Created Events
+{% endblock %}
+
+{% block main %}
+    <table class="table tablestriped">
+            <thead>
+                <tr>
+                    <th class="text-center">Event</th>
+                    <th class="text-center">Description</th>
+                    <th class="text-center">Location</th>
+                    <th class="text-center">Start Time</th>
+                    <th class="text-center">End Time</th>
+                    <th class="text-center">Number Participants Registered</th>
+                    <th class="text-center">Cancel Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for event in createdEvents %}
+                    <tr>
+                            <td class="text-center">{{ event['nameEvent'] }}</td>
+                            <td class="text-center">{{ event['description'] }} </td>
+                            <td class="text-center">{{ event['location'] }}</td>
+                            <td class="text-center">{{ event['startDate'] }}</td>
+                            <td class="text-center">{{ event['endDate'] }}</td>
+                            <td class="text-center">{{ event['currentParticipants'] }}</td>
+                            <form action="/createdEvents" method="post"> 
+                                <td> <button type="submit" name="eventID" id="eventID" value ="{{event['eventID']}}">Cancel</button> </td> 
+                            </form>
+                    </tr>
+                {% endfor %}
+            </tbody>
+    </table>
+{% endblock %}
+

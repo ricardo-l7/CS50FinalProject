@@ -1,0 +1,84 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .crimson
+{
+    color: #990000;
+}
+nav .navbar-brand .white
+{
+    color: #ffffff;
+    
+}
+nav .navbar-brand .vermillion
+{
+    color: #e34234;
+}
+
+.background {
+    background-image: url('aerial-harvard.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 88vh;
+}
+
+.background2 {
+    background-image: url('https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2016/01/24/203839_1311937.jpg.1500x999_q95_crop-smart_upscale.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 88vh;
+}
+
+.background3 {
+    background-image: url(https://news.harvard.edu/wp-content/uploads/2020/03/Zoom_Background_003-1350x900.jpg);
+    background-position: 0% 100%;
+    height: 88vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 40vw;
+    border: 2px;
+    padding: 1vw;
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+
+.header1{
+    font-size: 3vw; 
+    text-align: center;
+    font-weight: bold;
+}
+
+mark {
+    background-color: rgba(255,255,255, .5);
+    color: #900000;
+}
+
+
+#carousel
+{
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    background-color: #990000;
+}
+
+.center {
+    background-image: url('blob:https://www.pinterest.com/d684c297-8fc1-43e5-880e-a11c65295e1f');
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    height: 10vh;
+  }
+
